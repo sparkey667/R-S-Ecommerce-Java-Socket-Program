@@ -1,0 +1,41 @@
+//Dheric Seney
+//COMP1150-01
+//Final Project
+//6 December 2017
+
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="455.0" prefWidth="872.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Controller">
+   <children>
+      <Label text="Label" />
+      <TableView fx:id="columnName" prefHeight="319.0" prefWidth="872.0">
+        <columns>
+          <TableColumn fx:id="ColFName" prefWidth="176.0" text="First Name" />
+          <TableColumn fx:id="ColLName" minWidth="9.0" prefWidth="107.0" text="Last Name" />
+          <TableColumn fx:id="ColContact" prefWidth="267.0" text="Contact" />
+          <TableColumn fx:id="ColProduct" minWidth="0.0" prefWidth="157.0" text="Product" />
+          <TableColumn fx:id="ColPrice" minWidth="0.0" prefWidth="164.0" text="Price" />
+        </columns>
+      </TableView>
+      <AnchorPane prefHeight="454.0" prefWidth="872.0" AnchorPane.bottomAnchor="-47.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Button fx:id="Submit" layoutX="371.0" layoutY="336.0" mnemonicParsing="false" onAction="#getData" text="View All" />
+            <TextField fx:id="filterFName" layoutX="10.0" layoutY="384.0" prefHeight="31.0" prefWidth="139.0" />
+            <TextField fx:id="filterLName" layoutX="164.0" layoutY="384.0" prefHeight="31.0" prefWidth="142.0" />
+            <TextField fx:id="filterContact" layoutX="328.0" layoutY="384.0" prefHeight="31.0" prefWidth="191.0" />
+            <TextField fx:id="filterProduct" layoutX="576.0" layoutY="384.0" prefHeight="31.0" prefWidth="120.0" />
+            <TextField fx:id="filterPrice" layoutX="743.0" layoutY="384.0" prefHeight="31.0" prefWidth="110.0" />
+            <Button fx:id="FilterProduct" layoutX="571.0" layoutY="421.0" mnemonicParsing="false" onAction="#filterProduct" text="Product Search" />
+            <Button fx:id="FilterFName" layoutX="8.0" layoutY="421.0" mnemonicParsing="false" onAction="#filterFName" text="First Name Search" />
+            <Button fx:id="FilterLName" layoutX="163.0" layoutY="421.0" mnemonicParsing="false" onAction="#filterLName" text="Last Name Search" />
+            <Button fx:id="FilterContact" layoutX="363.0" layoutY="421.0" mnemonicParsing="false" onAction="#filterContact" text="Contact Search" />
+            <Button fx:id="FilterMinPrice" layoutX="743.0" layoutY="421.0" mnemonicParsing="false" onAction="#filterMinPrice" text="Min" />
+            <Button fx:id="FilterMaxPrice" layoutX="798.0" layoutY="421.0" mnemonicParsing="false" onAction="#filterMaxPrice" text="Max" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
